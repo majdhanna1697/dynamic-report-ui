@@ -1,0 +1,37 @@
+.side-bar {
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	top: 0;
+	height: 100%;
+	max-height: 100vh;
+	overflow: hidden;
+	background-color: var(--onBackground);
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+	.side-bar-logo-wrapper {
+		padding: 10px;
+		box-sizing: border-box;
+
+		.side-bar-logo {
+			max-width: 100%;
+		}
+	}
+
+	.side-bar-button-container {
+		flex: 1;
+		overflow: auto;
+
+		.side-bar-buttons-section {
+			border-bottom: 1px solid var(--border);
+			margin: 5px 0;
+			padding-bottom: 5px;
+
+			&:last-child {
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+}

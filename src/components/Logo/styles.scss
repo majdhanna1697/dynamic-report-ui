@@ -1,0 +1,31 @@
+.logo-container {
+	font-size: 20px;
+	font-weight: 600;
+	display: flex;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+
+	.fixed-name {
+		color: var(--primary);
+		flex: 1;
+		margin: 0px 2px;
+	}
+
+	.animated-name {
+		color: var(--text);
+		overflow: hidden;
+		animation: 2s slideText ease-in-out;
+		margin: 0px 2px;
+		white-space: nowrap;
+	}
+
+	@keyframes slideText {
+		from {
+			flex: 0;
+		}
+		to {
+			flex: 1;
+		}
+	}
+}

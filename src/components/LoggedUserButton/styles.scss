@@ -1,0 +1,139 @@
+.logged-user-button-container {
+	position: relative;
+
+	.logged-user-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		border: none;
+		font-weight: 600;
+		font-size: 13px;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+		cursor: pointer;
+		outline: none;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+		* {
+			cursor: pointer;
+		}
+	}
+
+	.logged-user-button-menu {
+		position: absolute;
+		background-color: var(--overlay);
+		border: 1px solid var(--border);
+		padding: 7px 5px;
+		width: 250px;
+		right: 0;
+		margin-top: 10px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+		border-radius: 5px;
+		display: none;
+		flex-direction: column;
+		z-index: 100;
+
+		&.visible {
+			display: flex;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -6px;
+			right: 10px;
+			width: 10px;
+			height: 10px;
+			border-left: 1px solid var(--border);
+			border-top: 1px solid var(--border);
+			background-color: var(--overlay);
+			transform: rotate(45deg);
+		}
+
+		.logged-user-menu-user-info {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			padding: 5px 10px;
+			box-sizing: border-box;
+			padding-bottom: 12px;
+			border-bottom: 1px solid var(--border);
+
+			.logged-user-menu-user-info-circle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-width: 45px;
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				font-weight: 600;
+				font-size: 13px;
+				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+			}
+
+			.logged-user-menu-user-info-label {
+				color: var(--text);
+				font-size: 12px;
+				text-transform: capitalize;
+				font-weight: 600;
+
+				&::after {
+					content: ":";
+					padding-right: 2px;
+				}
+			}
+
+			.logged-user-menu-user-info-value {
+				color: var(--text);
+				font-size: 13px;
+				text-transform: capitalize;
+			}
+		}
+
+		.logged-user-menu-group-buttons {
+			border-bottom: 1px solid var(--border);
+			display: flex;
+			flex-direction: column;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			.logged-user-menu-btn {
+				background-color: transparent;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 7px 10px;
+				color: var(--text);
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				* {
+					cursor: pointer;
+				}
+
+				&:hover {
+					background-color: rgba(transparent, 0.05);
+				}
+
+				.logged-user-menu-button-icon {
+					width: 20px;
+					height: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.logged-user-menu-button-label {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}

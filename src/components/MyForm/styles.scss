@@ -1,0 +1,22 @@
+.my-form-container {
+	width: 100%;
+	max-width: 500px;
+
+	.my-form-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		.my-form-inputs {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+
+		.my-form-action-buttons {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+	}
+}

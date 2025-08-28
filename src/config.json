@@ -1,0 +1,16 @@
+{
+	"server_url": "http://localhost:3011",
+	"metrics": [
+		{ "key": "spent", "label": "Spent", "sortable": true },
+		{ "key": "impressions", "label": "Impressions", "sortable": true },
+		{ "key": "clicks", "label": "Clicks", "sortable": true }
+	],
+	"dimensions": [
+		{ "key": "accountId", "label": "Account ID", "sortable": false, "dbColumn": "account_id" },
+		{ "key": "campaignId", "label": "Campaign ID", "sortable": false, "dbColumn": "campaign_id" },
+		{ "key": "country", "label": "Country", "sortable": false },
+		{ "key": "platform", "label": "Platform", "sortable": false },
+		{ "key": "browser", "label": "Browser", "sortable": false },
+		{ "key": "date", "label": "Date", "sortable": true, "dbColumn": "sys_creation_date", "type": "date" }
+	]
+}

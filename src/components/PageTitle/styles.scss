@@ -1,0 +1,31 @@
+.page-title-container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	gap: 2px;
+
+	.page-title-row {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		.page-title-icon {
+			font-size: 24px;
+			color: var(--text);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.page-title-title {
+			font-size: 20px;
+			font-weight: 600;
+			color: var(--text);
+		}
+	}
+
+	.page-title-subtitle {
+		font-size: 14px;
+		color: var(--lightText);
+	}
+}

@@ -1,0 +1,28 @@
+export const themes = {
+	light: [
+		["--background", "#f3f3f3"],
+		["--onBackground", "#fff"],
+		["--overlay", "#ffffff"],
+		["--text", "#000"],
+		["--lightText", "#757B81"],
+		["--primary", "#f4aa00"],
+		["--border", "#E5E7EB"],
+		["--green", "#4CAF50"],
+		["--red", "#F44336"],
+		["--modalBG", "#757B81"],
+		["--linkText", "#06c"],
+	],
+	dark: [
+		["--background", "#1e1f2b"],
+		["--onBackground", "#2c2f3f"],
+		["--overlay", "#3b3f54"],
+		["--text", "#FFF"],
+		["--lightText", "#B0B5C0"],
+		["--primary", "#fbb515"],
+		["--border", "#5A5E70"],
+		["--green", "#4CAF50"],
+		["--red", "#F44336"],
+		["--modalBG", "#5A5E70"],
+		["--linkText", "#5ab4ff"],
+	],
+};
