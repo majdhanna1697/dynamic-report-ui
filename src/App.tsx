@@ -17,7 +17,6 @@ function App() {
 
 	const systemState = useSelector((state: any) => state.system);
 	const userState = useSelector((state: any) => state.user);
-	const sideModalState = useSelector((state: any) => state.sideModal);
 
 	const [loadingApp, setLoadingApp] = useState(true);
 
@@ -52,24 +51,16 @@ function App() {
 				<label>loading</label>
 			) : (
 				<div className="app-page-container">
-					{userState.accessToken && (
+					{userState.accessToken && systemState.sideBarOpened && (
 						<div className="app-page-container-left">
 							<SideBar />
 						</div>
 					)}
-					<div className="app-page-container-right">
+					<div className="app-page-container-right" style={{ padding: systemState.sideBarOpened ? undefined : 0 }}>
 						{userState.accessToken && <Header />}
 						<div className="app-routes">
 							<Routes>
 								<Route path="/" element={userState.accessToken ? <Home /> : <Login />} />
-								{/* {userState.accessToken && (
-									<Route path="/:env/*" element={<EnvironmentLayout />}>
-										<Route path="pods" element={<PodsTable />} />
-										<Route path="pods/:podId" element={<PodViewer />} />
-										<Route path="be-pdf" element={<BEpdf />} />
-										<Route path="cb-documents" element={<CBdocuments />} />
-									</Route>
-								)} */}
 								<Route path="*" element={<Navigate to="/" replace />} />
 							</Routes>
 						</div>

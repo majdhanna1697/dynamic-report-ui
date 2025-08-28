@@ -220,3 +220,25 @@
 		transform: translate(50px, 100px) rotate(360deg) scale(1.1);
 	}
 }
+
+@media only screen and (max-width: 767px) {
+	.login {
+		.login-container {
+			height: unset;
+			flex-direction: column-reverse;
+
+			.login-container-left,
+			.login-container-right {
+				width: unset;
+
+				.login-right-content-wrapper {
+					position: relative;
+					width: unset;
+					height: 200px;
+					margin-top: 110px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

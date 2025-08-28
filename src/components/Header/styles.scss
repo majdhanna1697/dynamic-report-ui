@@ -24,6 +24,12 @@
 			align-items: center;
 			gap: 15px;
 			height: 100%;
+
+			.toggle-side-bar-button {
+				font-size: 30px;
+				cursor: pointer;
+				color: var(--text);
+			}
 		}
 
 		.header-container-right {
