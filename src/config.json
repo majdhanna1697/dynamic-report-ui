@@ -1,5 +1,5 @@
 {
-	"server_url": "http://localhost:3011",
+	"server_url": "https://dynamic-report-v1-07be90bc182a.herokuapp.com",
 	"metrics": [
 		{ "key": "spent", "label": "Spent", "sortable": true },
 		{ "key": "impressions", "label": "Impressions", "sortable": true },
